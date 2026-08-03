@@ -20,7 +20,7 @@ El contenido y la guía del sitio están desarrollados por **Ignacio Morales**, 
 
 ---
 
-## 📂 Estructura del Proyecto
+ Estructura del Proyecto
 
 El sitio web está compuesto por las siguientes páginas interconectadas:
 
@@ -37,7 +37,7 @@ El sitio web está compuesto por las siguientes páginas interconectadas:
 
 ---
 
-## ✨ Características Principales
+ Características Principales
 
 * **Interfaz Dark Mode:** Diseño moderno con paleta oscura (`#121214`), textos legibles (`#e1e1e6`) y acentos en rojo vibrante (`#ff3e3e`) y naranja (`#f5b041`).
 * **Multimedia Nativo:** Uso de etiquetas `<video>` y `<audio>` nativas de HTML5 para tutoriales y soporte auditivo sin dependencias externas.
@@ -46,14 +46,14 @@ El sitio web está compuesto por las siguientes páginas interconectadas:
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+#Tecnologías Utilizadas
 
 * **HTML5:** Estructuración semántica del contenido, formularios y componentes multimedia.
 * **CSS3:** Estilos personalizados, efectos `hover`, transiciones fluidas y diseño adaptable en bloques de contenedores.
 
 ---
 
-## 🚀 Instalación y Despliegue Local
+ Instalación y Despliegue Local
 
 Para clonar y visualizar este proyecto en tu entorno local, sigue estos pasos:
 
@@ -69,19 +69,15 @@ git clone https://github.com/TU-USUARIO/TU-REPOSITORIO.git
 cd TU-REPOSITORIO
 
 ```
-
-
 3. **Asegúrate de contar con los recursos multimedia en la raíz:**
 * Archivos de video: `menu.mp4`, `tecnica.mp4`, `video.mp4`
 * Archivos de audio: `menu.mp3`, `tecnica.mp3`, `audio.mp3`
-
 
 4. **Abre el archivo inicial:**
 Simplemente haz doble clic sobre `menu.html` en tu explorador de archivos o utiliza una extensión como *Live Server* en VS Code para levantarlo localmente.
 
 ---
-
-## ✉️ Contacto
+ Contacto
 
 Si tienes dudas sobre las rutinas de práctica, la técnica de baquetas o deseas consultar por las clases, puedes contactar al administrador:
 
