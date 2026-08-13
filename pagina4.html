@@ -3,54 +3,60 @@
     <meta charset="UTF-8">
     <title>Formulario de contacto - Blog de Baterista</title>
     <style>
-        body { background-color: #121214; color: #e1e1e6; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0;}
-        .container { max-width: 800px; margin: 40px auto; padding: 30px; background-color: #1a1a1e; border-radius: 12px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); border-left: 5px solid #ff3e3e; }
-        h1, h2 { color: #ffffff; font-weight: 700; }
-        h1 { font-size: 2.2rem; border-bottom: 2px solid #29292e; padding-bottom: 10px; color: #ff3e3e; }
-        h2 { font-size: 1.5rem; color: #f5b041; margin-top: 30px; }
-        p { font-size: 1.1rem; color: #c4c4cc; box-shadow: 8px 8px 24px rgba(73, 75, 73, 0.589) inset; }
-        ul, ol, table { background-color: #202024; padding: 20px 40px; border-radius: 8px; border: 1px solid #29292e; }
-        li, td, th { margin-bottom: 10px; font-size: 1.05rem; }
-        a:not(.terminos) { 
-            display: inline-block; 
-            color: #121214; 
-            background-color: #ff3e3e; 
-            padding: 10px 20px; 
-            text-decoration: none; 
-            font-weight: bold; 
-            border-radius: 6px; 
-            transition: all 0.3s ease; 
-            margin: 10px 0; 
-        }
-        a:not(.terminos):hover { 
-            background-color: #e03232; 
-            transform: translateY(-2px); 
-        }
+       <style>
+    body { background-color: #121214; color: #e1e1e6; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0;}
+    .container { max-width: 800px; margin: 40px auto; padding: 30px; background-color: #1a1a1e; border-radius: 12px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); border-left: 5px solid #ff3e3e; }
+    h1, h2 { color: #ffffff; font-weight: 700; }
+    h1 { font-size: 2.2rem; border-bottom: 2px solid #29292e; padding-bottom: 10px; color: #ff3e3e; }
+    h2 { font-size: 1.5rem; color: #f5b041; margin-top: 30px; }
+    p { font-size: 1.1rem; color: #c4c4cc; box-shadow: 8px 8px 24px rgba(73, 75, 73, 0.589) inset; }
+    ul, ol, table { background-color: #202024; padding: 20px 40px; border-radius: 8px; border: 1px solid #29292e; }
+    li, td, th { margin-bottom: 10px; font-size: 1.05rem; }
+    a { 
+        display: inline-block; 
+        color: #121214; 
+        background-color: #ff3e3e; 
+        padding: 10px 20px; 
+        text-decoration: none; 
+        font-weight: bold; 
+        border-radius: 6px; 
+        transition: all 0.3s ease; 
+        margin: 10px 0; 
+    }
+    a:hover { 
+        background-color: #e03232; 
+        transform: translateY(-2px); 
+    }
 
-        a.btn-back { background-color: #29292e; color: #e1e1e6; border: 1px solid #323238; }
-        a.btn-back:hover { background-color: #323238; color: #ffffff; box-shadow: 8px 8px 24px rgba(73, 75, 73, 0.589) inset; }
-        a.terminos {
-            display: inline;
-            background: transparent;
-            padding: 0;
-            margin: 0;
-            color: #f5b041; /* Dorado/Amarillo bonito */
-            text-decoration: underline;
-            font-weight: 600;
-            transition: color 0.2s ease;
-        }
-        a.terminos:hover {
-            color: #ff3e3e;
-            background: transparent;
-        }
+    a.btn-back { background-color: #29292e; color: #e1e1e6; border: 1px solid #323238; }
+    a.btn-back:hover { background-color: #323238; color: #ffffff; box-shadow: 8px 8px 24px rgba(73, 75, 73, 0.589) inset; }
 
-        hr { border: 0; height: 1px; background: #29292e; margin: 30px 0; }
-        form { font-size: large; margin-top: auto; width: 100%; }
-        
-        .container2 { display: flex; flex-direction: row; justify-content: center; }
-        .sinesquinateacherAlexis { resize: none !important; width: 100%; max-width: 100%; box-sizing: border-box; }
-        .div { margin-top: 15px; }
-    </style>
+    a.terminos {
+        display: inline !important;
+        background-color: transparent !important;
+        background: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        color: #f5b041 !important;
+        text-decoration: underline !important;
+        font-weight: 600 !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+    }
+    a.terminos:hover {
+        color: #ff3e3e !important;
+        background-color: transparent !important;
+        background: none !important;
+        transform: none !important;
+    }
+
+    hr { border: 0; height: 1px; background: #29292e; margin: 30px 0; }
+    form { font-size: large; margin-top: auto; width: 100%; }
+    
+    .container2 { display: flex; flex-direction: row; justify-content: center; }
+    .sinesquinateacherAlexis { resize: none !important; width: 100%; max-width: 100%; box-sizing: border-box; }
+    .div { margin-top: 15px; }
+</style>
 </head>
 <body>
     <div class="container">
@@ -77,8 +83,8 @@
                     <textarea class="sinesquinateacherAlexis" name="Razones" rows="4" placeholder="Escribe aquí tu motivo..."></textarea><br>
 
                     <div class="div">
-                        <input type="checkbox" name="terminos" required id="chk-terminos">
                         ¿Aceptas los <a href="terminos.html" name="Terminos" target="_blank" class="terminos">términos y condiciones</a>?
+                         <input type="checkbox" name="terminos" required>
                     </div>
 
                     <br>
