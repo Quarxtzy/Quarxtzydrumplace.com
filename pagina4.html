@@ -35,6 +35,9 @@
         .terminos {
             color: #ff3e3e; text-decoration: underline;
         }
+        .div {
+            margin-top: 15px
+        }
     </style>
 </head>
 <body>
@@ -57,7 +60,10 @@
 </select> <br>
     Ahora, dime; por qué quieres contar con mi ayuda: (opcional, pero ayuda a ganar) <br>
     <textarea class="sinesquinateacherAlexis" name="Razones" rows="4" cols="100" placeholder="Escribe aquí tu motivo..."></textarea> <br><br>    
-¿Aceptas los <a href="terminos.html" target="_blank class="terminos">términos y condiciones</a>? <input type="checkbox" name="Aceptas_terminos" required> <br>
+                            <div class="div">
+    <input type="checkbox" name="terminos" required>
+        ¿Aceptas los <a href="pagina5.html" target="_blank" class="terminos";>términos y condiciones</a>?
+                            </div>
     <input type="hidden" name="_captcha" value="false">
     <button type="submit">Enviar encuesta</button>
 </form>
