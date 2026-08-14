@@ -1,87 +1,101 @@
 <html>
 <head>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥁</text></svg>">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de contacto - Blog de Baterista</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥁</text></svg>">
+    
     <style>
-        img, iframe, video, input, select, textarea {
-    max-width: 100% !important;
-    box-sizing: border-box;
-}
-        table {
-    width: 100% !important;
-    max-width: 100% !important;
-    table-layout: fixed;
-    word-wrap: break-word;
-    box-sizing: border-box;
-}
-html, body {
-    max-width: 100% !important;
-    overflow-x: hidden; 
-    margin: 0;
-    padding: 0;
-}
-        
-td, th {
-    word-break: break-word; 
-}
-        img, iframe, video, input, select, textarea {
-    max-width: 100% !important;
-    box-sizing: border-box;
-}
-        @media (max-width: 600px) {
-    .container {
-        width: 92% !important;
-        padding: 15px 10px !important;
-        margin: 10px auto !important;
-        box-sizing: border-box;
-    }
+        html, body {
+            max-width: 100% !important;
+            overflow-x: hidden; 
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
 
-    ul, ol, table {
-        padding: 10px !important;
-    }
-}
-.container {
-    width: 90%;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-}
-        table {
-    width: 100% !important;
-    max-width: 100% !important;
-    table-layout: fixed;
-    word-wrap: break-word;
-    box-sizing: border-box;
-}
-html, body {
-    max-width: 100% !important;
-    overflow-x: hidden; 
-    margin: 0;
-    padding: 0;
-}
-        
-td, th {
-    word-break: break-word; 
-}
-        img, iframe, video, input, select, textarea {
-    max-width: 100% !important;
-    box-sizing: border-box;
-}
+        body { 
+            background-color: #121214; 
+            color: #e1e1e6; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6;
+        }
 
-        html {
-    scroll-behavior: smooth;
-}
-        body { background-color: #121214; color: #e1e1e6; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0;}
-        .container { max-width: 800px; margin: 40px auto; padding: 30px; background-color: #1a1a1e; border-radius: 12px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); border-left: 5px solid #ff3e3e; }
+        .container { 
+            width: 90%;
+            max-width: 800px; 
+            margin: 40px auto; 
+            padding: 30px; 
+            background-color: #1a1a1e; 
+            border-radius: 12px; 
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); 
+            border-left: 5px solid #ff3e3e; 
+            box-sizing: border-box;
+        }
+
         h1, h2 { color: #ffffff; font-weight: 700; }
         h1 { font-size: 2.2rem; border-bottom: 2px solid #29292e; padding-bottom: 10px; color: #ff3e3e; }
         h2 { font-size: 1.5rem; color: #f5b041; margin-top: 30px; }
-        p { font-size: 1.1rem; color: #c4c4cc; box-shadow: 8px 8px 24px rgba(73, 75, 73, 0.589) inset; }
-        ul, ol, table { background-color: #202024; padding: 20px 40px; border-radius: 8px; border: 1px solid #29292e; }
-        li, td, th { margin-bottom: 10px; font-size: 1.05rem; }
-        
+        p { font-size: 1.1rem; color: #c4c4cc; }
+
+        form { 
+            font-size: 1.05rem; 
+            width: 100%;
+            max-width: 600px;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        input[type="text"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            background-color: #202024;
+            border: 1px solid #29292e;
+            border-radius: 6px;
+            color: #e1e1e6;
+            font-family: inherit;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+
+        input[type="text"]:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #ff3e3e;
+        }
+
+        .sinesquinateacherAlexis {
+            resize: vertical;
+        }
+
+        .div-checkbox {
+            margin-top: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        button[type="submit"] {
+            background-color: #ff3e3e;
+            color: #121214;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #e03232;
+            transform: translateY(-2px);
+        }
+
         a.btn-back { 
             display: inline-block; 
             color: #e1e1e6; 
@@ -92,50 +106,39 @@ td, th {
             border-radius: 6px; 
             border: 1px solid #323238;
             transition: all 0.3s ease; 
-            margin: 10px 0; 
+            margin: 10px 5px 10px 0; 
         }
+
         a.btn-back:hover { 
             background-color: #323238; 
             color: #ffffff;
             box-shadow: 8px 8px 24px rgba(73, 75, 73, 0.589) inset; 
         }
+
         a.terminos {
-            display: inline !important;
-            background: none !important;
-            background-color: transparent !important;
-            padding: 0 !important;
-            margin: 0 !important;
-            color: #ff3e3e !important;
-            text-decoration: underline !important;
-            font-weight: normal !important;
-            box-shadow: none !important;
-            border-radius: 0 !important;
+            color: #ff3e3e;
+            text-decoration: underline;
         }
+
         a.terminos:hover {
-            color: #f5b041 !important;
-            background: none !important;
-            transform: none !important;
+            color: #f5b041;
         }
 
         hr { border: 0; height: 1px; background: #29292e; margin: 30px 0; }
-        form { font-size: large; margin-top: auto; }
-        
+
         .container2 {
-            display: flex; flex-direction: row; justify-content: center;
+            display: flex; 
+            flex-direction: row; 
+            justify-content: center;
+            width: 100%;
         }
-        .container3 {
-            display: flex; flex-direction: row; justify-content: center;
-            border-top: 100px;
-        }
-        .titulo {
-            display: flex; flex-direction: row; justify-content: center;
-            border-top: 100px;
-        }
-        .sinesquinateacherAlexis {
-            resize: none !important;
-        }
-        .div {
-            margin-top: 15px;
+
+        @media (max-width: 600px) {
+            .container {
+                width: 92% !important;
+                padding: 15px 10px !important;
+                margin: 10px auto !important;
+            }
         }
     </style>
 </head>
@@ -144,35 +147,48 @@ td, th {
         <header>
             <h1>Formulario de clase gratuita</h1>
         </header>
+        
         <main>
             <div class="container2">
                 <form action="https://formsubmit.co/ignamoralesosorio@gmail.com" method="POST">
-                    Nombre: <input type="text" required name="nombre"> <br><br>
-                    Apellido: <input type="text" required name="apellido"> <br><br>
-                    Género:
-                    <select required name="genero"> <br>
-                        <option value="" disabled selected hidden></option>
+                    
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+
+                    <label for="genero">Género:</label>
+                    <select id="genero" name="genero" required>
+                        <option value="" disabled selected hidden>Selecciona una opción</option>
                         <option value="Hombre">Hombre</option>
                         <option value="Mujer">Mujer</option>
                         <option value="Otro">Otro</option>
                         <option value="Prefiero no decirlo">Prefiero no decirlo</option>
-                    </select> <br><br>
-             </div>
-                   <label title="¡Seleccionar esto te da más posibilidades de ganar!">
-    ¿Por qué quieres contar con mi ayuda? ℹ️
-</label> <br><br>
-                    <textarea class="sinesquinateacherAlexis" style="width: 100%" name="Razones" rows="4" cols="100" placeholder="Escribe aquí tu motivo..."></textarea> <br><br>    
-                    <div class="div">
-                        ¿Aceptas los <a href="terminos.html" class="terminos">términos y condiciones</a>?
-                        <input type="checkbox" name="terminos" required>
+                    </select>
+
+                    <label for="razones" title="¡Seleccionar esto te da más posibilidades de ganar!">
+                        ¿Por qué quieres contar con mi ayuda? ℹ️
+                    </label>
+                    <textarea id="razones" class="sinesquinateacherAlexis" name="Razones" rows="4" placeholder="Escribe aquí tu motivo..."></textarea>
+
+                    <div class="div-checkbox">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos" style="font-weight: normal; margin-bottom: 0;">
+                            ¿Aceptas los <a href="terminos.html" class="terminos">términos y condiciones</a>?
+                        </label>
                     </div>
+
                     <input type="hidden" name="_captcha" value="false">
-                    <br>
+                    
                     <button type="submit">Enviar encuesta</button>
                 </form>
-            
+            </div>
+
+            <hr>
+
             <nav>
-                <br> <a href="pagina3.html" class="btn-back">← Devolverse</a> <br>
+                <a href="pagina3.html" class="btn-back">← Devolverse</a>
                 <a href="index.html" class="btn-back">← Volver al Menú Principal</a>
             </nav>
         </main>
