@@ -1,9 +1,45 @@
-<html lang="es">
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥁</text></svg>">
     <meta charset="UTF-8">
     <title>Formulario de contacto - Blog de Baterista</title>
     <style>
+        img, iframe, video, input, select, textarea {
+    max-width: 100% !important;
+    box-sizing: border-box;
+}
+.container {
+    width: 90%; /* En lugar de un ancho fijo, toma el 90% de la pantalla */
+    max-width: 800px; /* Pero no crece más de 800px en PC */
+    margin: 20px auto;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.6rem !important;
+    }
+
+    h2 {
+        font-size: 1.2rem !important;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .container2, .container3 {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    a.btn-back {
+        display: block !important;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
         html {
     scroll-behavior: smooth;
 }
@@ -95,7 +131,7 @@
                    <label title="¡Seleccionar esto te da más posibilidades de ganar!">
     ¿Por qué quieres contar con mi ayuda? ℹ️
 </label> <br><br>
-                    <textarea class="sinesquinateacherAlexis" name="Razones" rows="4" cols="100" placeholder="Escribe aquí tu motivo..."></textarea> <br><br>    
+                    <textarea class="sinesquinateacherAlexis" style="width: 100%" name="Razones" rows="4" cols="100" placeholder="Escribe aquí tu motivo..."></textarea> <br><br>    
                     <div class="div">
                         ¿Aceptas los <a href="terminos.html" target="_blank" class="terminos">términos y condiciones</a>?
                         <input type="checkbox" name="terminos" required>
