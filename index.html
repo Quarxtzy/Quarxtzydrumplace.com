@@ -5,58 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Baterista - Ignacio Morales</title>
     <style>
-table {
-    width: 100% !important;
-    max-width: 100% !important;
-    table-layout: fixed;
-    word-wrap: break-word;
-    box-sizing: border-box;
-}
-html, body {
-    max-width: 100% !important;
-    overflow-x: hidden; 
-    margin: 0;
-    padding: 0;
-}
-        
-td, th {
-    word-break: break-word; 
-}
-        img, iframe, video, input, select, textarea {
-    max-width: 100% !important;
-    box-sizing: border-box;
-}
-        @media (max-width: 600px) {
-    .container {
-        width: 92% !important;
-        padding: 15px 10px !important;
-        margin: 10px auto !important;
-        box-sizing: border-box;
-    }
+        *
+        , *::before, *::after {
+            box-sizing: border-box;
+        }
 
-    ul, ol, table {
-        padding: 10px !important;
-    }
-}
-.container {
-    width: 90%;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-}
+        html, body {
+            max-width: 100% !important;
+            overflow-x: hidden; 
+            margin: 0;
+            padding: 0;
+        }
+
         html {
-    scroll-behavior: smooth;
-}
+            scroll-behavior: smooth;
+        }
+
         body {
             background-color: #121214;
             color: #e1e1e6;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            margin: 0;
-            padding: 0;
             cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ctext y='24' font-size='24'%3E🎸%3C/text%3E%3C/svg%3E") 0 0, auto;
         }
+
         .container {
+            width: 90%;
             max-width: 800px;
             margin: 40px auto;
             padding: 30px;
@@ -65,63 +39,156 @@ td, th {
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
             border-left: 5px solid #ff3e3e;
         }
+
         .container2 {
-            display: flex; flex-direction: row; justify-content: center;
+            display: flex; 
+            flex-direction: row; 
+            justify-content: center;
+            width: 100%;
         }
+
         .contenedor-flexencasode {
-          display: flex;
-        justify-content: center; 
-          align-items: center;                        
+            display: flex;
+            justify-content: center; 
+            align-items: center;                        
         }
+
         h1, h2, h3 { color: #ffffff; font-weight: 700; }
         h1 { font-size: 2.2rem; border-bottom: 2px solid #29292e; padding-bottom: 10px; color: #ff3e3e; }
         h2 { font-size: 1.5rem; color: #f5b041; margin-top: 30px; }
         p, footer { font-size: 1.1rem; color: #c4c4cc; }
-        ul, ol, table { background-color: #202024; padding: 20px 40px; border-radius: 8px; border: 1px solid #29292e; box-shadow: 8px 8px 24px rgba(73, 75, 73, 0.589) inset;}
-        li, td, th { margin-bottom: 10px; font-size: 1.05rem; }
-        img { max-width: 100%; height: auto; border-radius: 8px; border: 3px solid #29292e; display: block; margin: 20px auto; }
-        a { display: inline-block; color: #121214; background-color: #ff3e3e; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 6px; transition: all 0.3s ease; margin: 10px 0; }
-        a:hover { background-color: #e03232; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(255, 62, 62, 0.3);}
+
+        img, iframe, video, audio, input, select, textarea {
+            max-width: 100% !important;
+            height: auto;
+        }
+
+        img { 
+            border-radius: 8px; 
+            border: 3px solid #29292e; 
+            display: block; 
+            margin: 20px auto; 
+        }
+
+        a { 
+            display: inline-block; 
+            color: #121214; 
+            background-color: #ff3e3e; 
+            padding: 10px 20px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 6px; 
+            transition: all 0.3s ease; 
+            margin: 10px 0; 
+        }
+
+        a:hover { 
+            background-color: #e03232; 
+            transform: translateY(-2px); 
+            box-shadow: 0 4px 12px rgba(255, 62, 62, 0.3);
+        }
+
         hr { border: 0; height: 1px; background: #29292e; margin: 30px 0; }
+
+        ul, ol { 
+            background-color: #202024; 
+            padding: 20px 30px; 
+            border-radius: 8px; 
+            border: 1px solid #29292e; 
+            box-shadow: 8px 8px 24px rgba(73, 75, 73, 0.589) inset;
+        }
+
+        table {
+            width: 100% !important;
+            max-width: 100% !important;
+            table-layout: fixed;
+            background-color: #202024; 
+            padding: 10px; 
+            border-radius: 8px; 
+            border: 1px solid #29292e; 
+            box-shadow: 8px 8px 24px rgba(73, 75, 73, 0.589) inset;
+            border-collapse: collapse;
+        }
+
+        li, td, th { 
+            margin-bottom: 10px; 
+            font-size: 1.05rem; 
+            word-wrap: break-word;
+            word-break: break-word;
+        }
+
+        td, th {
+            padding: 8px;
+            text-align: left;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 95% !important;
+                padding: 15px 10px !important;
+                margin: 10px auto !important;
+            }
+
+            h1 { font-size: 1.6rem !important; }
+            h2 { font-size: 1.3rem !important; }
+
+            ul, ol {
+                padding: 15px 20px !important;
+            }
+
+            table {
+                padding: 5px !important;
+                font-size: 0.85rem !important;
+            }
+
+            td, th {
+                padding: 5px 3px !important;
+            }
+
+            .container2 {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="container2">
-    <header>
-        <h1>¡Bienvenidos a mi blog de batería!</h1>
-        <h2>Aquí veremos:</h2>
-<ul>
-<li>Introducción, quién soy</li>
-<li>Introducción a la técnica de manos de las baquetas</li>
-<li>Ejercicios para mejorar en batería</li>
-<li>Ejemplos de bateristas famosos para seguir adelante</li>
-</ul>
-    </header>
+            <header>
+                <h1>¡Bienvenidos a mi blog de batería!</h1>
+                <h2>Aquí veremos:</h2>
+                <ul>
+                    <li>Introducción, quién soy</li>
+                    <li>Introducción a la técnica de manos de las baquetas</li>
+                    <li>Ejercicios para mejorar en batería</li>
+                    <li>Ejemplos de bateristas famosos para seguir adelante</li>
+                </ul>
+            </header>
         </div>
-                <div class="container2">
-        <video controls width="500" height="250">
-        <source src="menu.mp4" type="video/mp4">
-        </video>    
-                </div>
+        <div class="container2">
+            <video controls width="500" height="250">
+                <source src="menu.mp4" type="video/mp4">
+            </video>    
+        </div>
         <hr>
-<main>
-    <section>
-        <h2>¿Quién es Ignacio Morales?</h2>
-        <p>Baterista bien conocido de bandas como <strong>"The White Demons"</strong>, y quien también es su querido narrador en esta página. Es chileno, nacido el 17/06/09. Estudioso salido del conservatorio de la Universidad Mayor, posee un amplio conocimiento en el instrumento y es capaz de desempeñarse como profesor.</p>
-<audio controls width ="200" height="150">
-        <source src="menu.mp3" type="audio/mpeg">
-</audio>
-    </section>
-        <h2>Entonces, partamos por la técnica de manos:</h2>
-        <nav>
-        <a href="pagina1.html">Introducción a las baquetas →</a>
-        </nav>
-    <footer>
-    <p>&copy; 2026 Mi Blog de baterista. Todos los derechos reservados.</p>
-    <p><a href="pagina5.html">Política de Privacidad</a></p>
-  </footer>
-</main>
+        <main>
+            <section>
+                <h2>¿Quién es Ignacio Morales?</h2>
+                <p>Baterista bien conocido de bandas como <strong>"The White Demons"</strong>, y quien también es su querido narrador en esta página. Es chileno, nacido el 17/06/09. Estudioso salido del conservatorio de la Universidad Mayor, posee un amplio conocimiento en el instrumento y es capaz de desempeñarse como profesor.</p>
+                <audio controls width="200" height="150">
+                    <source src="menu.mp3" type="audio/mpeg">
+                </audio>
+            </section>
+            <h2>Entonces, partamos por la técnica de manos:</h2>
+            <nav>
+                <a href="pagina1.html">Introducción a las baquetas →</a>
+            </nav>
+            <footer>
+                <p>&copy; 2026 Mi Blog de baterista. Todos los derechos reservados.</p>
+                <p><a href="pagina5.html">Política de Privacidad</a></p>
+            </footer>
+        </main>
     </div>
 </body>
 </html>
