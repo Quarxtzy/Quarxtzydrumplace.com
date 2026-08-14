@@ -5,152 +5,241 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Técnica de Baquetas - Blog de Baterista</title>
     <style>
-        img, iframe, video, input, select, textarea {
-    max-width: 100% !important;
-    box-sizing: border-box;
-}
-        table {
-    width: 100% !important;
-    max-width: 100% !important;
-    table-layout: fixed;
-    word-wrap: break-word;
-    box-sizing: border-box;
-}
-html, body {
-    max-width: 100% !important;
-    overflow-x: hidden; 
-    margin: 0;
-    padding: 0;
-}
-        
-td, th {
-    word-break: break-word; 
-}
-        img, iframe, video, input, select, textarea {
-    max-width: 100% !important;
-    box-sizing: border-box;
-}
-        @media (max-width: 600px) {
-    .container {
-        width: 92% !important;
-        padding: 15px 10px !important;
-        margin: 10px auto !important;
-        box-sizing: border-box;
-    }
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
 
-    ul, ol, table {
-        padding: 10px !important;
-    }
-}
-.container {
-    width: 90%;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-}
+        html, body {
+            max-width: 100% !important;
+            overflow-x: hidden; 
+            margin: 0;
+            padding: 0;
+        }
+
         html {
-    scroll-behavior: smooth;
-}
-        body { background-color: #121214; color: #e1e1e6; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0;  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ctext y='24' font-size='24'%3E🎸%3C/text%3E%3C/svg%3E") 0 0, auto; }
-        .container { max-width: 800px; margin: 40px auto; padding: 30px; background-color: #1a1a1e; border-radius: 12px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); border-left: 5px solid #ff3e3e; }
+            scroll-behavior: smooth;
+        }
+
+        body { 
+            background-color: #121214; 
+            color: #e1e1e6; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ctext y='24' font-size='24'%3E🎸%3C/text%3E%3C/svg%3E") 0 0, auto; 
+        }
+
+        .container { 
+            width: 90%;
+            max-width: 800px; 
+            margin: 40px auto; 
+            padding: 30px; 
+            background-color: #1a1a1e; 
+            border-radius: 12px; 
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); 
+            border-left: 5px solid #ff3e3e; 
+        }
+
+        .container2 {
+            display: flex; 
+            flex-direction: row; 
+            justify-content: center;
+            width: 100%;
+        }
+
+        .container3, .titulo {
+            display: flex; 
+            flex-direction: row; 
+            justify-content: center;
+            width: 100%;
+        }
+
         h1, h2 { color: #ffffff; font-weight: 700; }
         h1 { font-size: 2.2rem; border-bottom: 2px solid #29292e; padding-bottom: 10px; color: #ff3e3e; }
         h2 { font-size: 1.5rem; color: #f5b041; margin-top: 30px; }
         p { font-size: 1.1rem; color: #c4c4cc; }
-        ul, ol, table { background-color: #202024; padding: 20px 40px; border-radius: 8px; border: 1px solid #29292e; box-shadow: 8px 8px 24px rgba(73, 75, 73, 0.589) inset }
+
+        img, iframe, video, audio, input, select, textarea {
+            max-width: 100% !important;
+            height: auto;
+        }
+
+        ul, ol { 
+            background-color: #202024; 
+            padding: 20px 30px; 
+            border-radius: 8px; 
+            border: 1px solid #29292e; 
+            box-shadow: 8px 8px 24px rgba(73, 75, 73, 0.589) inset;
+        }
+
+        table {
+            width: 100% !important;
+            max-width: 100% !important;
+            table-layout: fixed;
+            background-color: #202024; 
+            padding: 10px; 
+            border-radius: 8px; 
+            border: 1px solid #29292e; 
+            box-shadow: 8px 8px 24px rgba(73, 75, 73, 0.589) inset;
+            border-collapse: collapse;
+        }
+
         li, th {
-            margin-bottom: 10px; font-size: 1.05rem;
+            margin-bottom: 10px; 
+            font-size: 1.05rem;
+            word-wrap: break-word;
+            word-break: break-word;
         }
-        td {margin-bottom: 10px; font-size: 1.05rem;
-           margin: 0; color: #f5b041;
+
+        td {
+            margin-bottom: 10px; 
+            font-size: 1.05rem;
+            color: #f5b041;
+            padding: 8px;
+            text-align: left;
+            word-wrap: break-word;
+            word-break: break-word;
         }
-        a { display: inline-block; color: #121214; background-color: #ff3e3e; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 6px; transition: all 0.3s ease; margin: 10px 0; }
-        a:hover { background-color: #e03232; transform: translateY(-2px); }
-        a.btn-back { background-color: #29292e; color: #e1e1e6; border: 1px solid #323238; }
-        a.btn-back:hover { background-color: #323238; color: #ffffff; }
+
+        th {
+            padding: 8px;
+            text-align: left;
+        }
+
+        a { 
+            display: inline-block; 
+            color: #121214; 
+            background-color: #ff3e3e; 
+            padding: 10px 20px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 6px; 
+            transition: all 0.3s ease; 
+            margin: 10px 0; 
+        }
+
+        a:hover { 
+            background-color: #e03232; 
+            transform: translateY(-2px); 
+        }
+
+        a.btn-back { 
+            background-color: #29292e; 
+            color: #e1e1e6; 
+            border: 1px solid #323238; 
+        }
+
+        a.btn-back:hover { 
+            background-color: #323238; 
+            color: #ffffff; 
+        }
+
         hr { border: 0; height: 1px; background: #29292e; margin: 30px 0; }
-        .destacado { background-color: rgba(245, 176, 65, 0.1); border-left: 4px solid #f5b041; padding: 15px; border-radius: 4px; margin: 20px 0; box-shadow: 8px 8px 24px rgba(73, 75, 73, 0.589) inset}
-        .container2 {
-            display: flex; flex-direction: row; justify-content: center;
+
+        .destacado { 
+            background-color: rgba(245, 176, 65, 0.1); 
+            border-left: 4px solid #f5b041; 
+            padding: 15px; 
+            border-radius: 4px; 
+            margin: 20px 0; 
+            box-shadow: 8px 8px 24px rgba(73, 75, 73, 0.589) inset;
         }
-         .container3 {
-            display: flex; flex-direction: row; justify-content: center;
-            position: relative;
-            border-top: 100px;
+
+        @media (max-width: 600px) {
+            .container {
+                width: 95% !important;
+                padding: 15px 10px !important;
+                margin: 10px auto !important;
+            }
+
+            h1 { font-size: 1.6rem !important; }
+            h2 { font-size: 1.3rem !important; }
+
+            ul, ol {
+                padding: 15px 20px !important;
+            }
+
+            table {
+                padding: 5px !important;
+                font-size: 0.85rem !important;
+            }
+
+            td, th {
+                padding: 5px 3px !important;
+            }
+
+            .container2, .container3, .titulo {
+                flex-direction: column;
+                align-items: center;
+            }
         }
-          .titulo {
-            display: flex; flex-direction: row; justify-content: center;
-            position: relative;
-            border-top: 100px;
-        }
-        
     </style>
 </head>
 <body>
     <div class="container">
-    <header>
-        <h1>¡Bienvenido a la guía sobre cómo usar baquetas!</h1>
-    </header>
-<main>
-                        <div class="titulo">
-        <h2>Para partir... ¿cómo agarrar las baquetas?</h2>
-                        </div>
-        <div class="container3">
-        <p>Primero que todo, agarra la baqueta (sea cual sea, ya vimos antes que no importa el número, sino tu gusto) como agarras una lata, y apoya tu pulgar en la parte de adelante. Piénsalo como si estuvieras jugando con un mando en una consola: el mismo gesto de agarrar y mover el joystick, pero con las baquetas.</p>
-        </div>
+        <header>
+            <h1>¡Bienvenido a la guía sobre cómo usar baquetas!</h1>
+        </header>
+        <main>
+            <div class="titulo">
+                <h2>Para partir... ¿cómo agarrar las baquetas?</h2>
+            </div>
+            <div class="container3">
+                <p>Primero que todo, agarra la baqueta (sea cual sea, ya vimos antes que no importa el número, sino tu gusto) como agarras una lata, y apoya tu pulgar en la parte de adelante. Piénsalo como si estuvieras jugando con un mando en una consola: el mismo gesto de agarrar y mover el joystick, pero con las baquetas.</p>
+            </div>
             <div class="container2">
-        <video controls width="500" height="250">
-        <source src="tecnica.mp4" type="video/mp4">
+                <video controls width="500" height="250">
+                    <source src="tecnica.mp4" type="video/mp4">
+                </video>
             </div>
 
-        </video>
-        
-        <h2>Una vez hayas pillado el truco...</h2>
-        <p>Empieza a practicar en una superficie el movimiento de golpear con la baqueta. Debe ser dinámico, fluido y lo que se debe mover primeramente es la muñeca, no otra parte.</p>
-<audio controls width ="200" height="150">
-        <source src="tecnica.mp3">
-</audio>
-<section>
-        <div class="destacado">
-            <p style="margin: 0; color: red;"><strong>RECOMIENDO VER VIDEOS SOBRE LA TÉCNICA DE MOELLER...</strong> </p> <br> <p style="color: #f5b041;"> La cual te ayudará a dominar el movimiento de muñeca (olas).</p>
-        </div>
-</section>
-<h2>Tipos de baquetas y su durabilidad, género etc</h2>
-<table>
-<tr>
-<th>Baquetas</th>
-<th>Baquetas 7A</th>
-<th>Baquetas 5A</th>
-<th>Baquetas 5B</th>
-</tr>
-<tr>
-<th>Durabilidad</th>
-<td>Se rompen muy facil</td>
-<td>Más resistentes</td>
-<td>Muy resistentes, pesadas</td>
-</tr>
-<tr>
-<th>Géneros</th>
-<td>Usados más en el jazz</td>
-<td>Versatil para muchos géneros</td>
-<td>Usadas en géneros más pesados, como el metal</td>
-</tr>
-<tr>
-<th>Dinámica</th>
-<td> Tiene muy buen control de dinámicas por su peso</td>
-<td>Sirven, pero requieren mayor control</td>
-<td>Ghost notes demasiado notorias por su peso</td>
-</tr>
-</table>
-        <nav>
-        <h2>Una vez estés al 100 con todo esto, te toca ir a ver ejercicios:</h2>
-        <a href="pagina2.html">Tutoriales de canciones, ejercicios y más →</a>
-        
-        <hr>
-        <a href="index.html" class="btn-back">← Volver al Menú</a>
-        </nav>
+            <h2>Una vez hayas pillado el truco...</h2>
+            <p>Empieza a practicar en una superficie el movimiento de golpear con la baqueta. Debe ser dinámico, fluido y lo que se debe mover primeramente es la muñeca, no otra parte.</p>
+            <audio controls width="200" height="150">
+                <source src="tecnica.mp3" type="audio/mpeg">
+            </audio>
 
+            <section>
+                <div class="destacado">
+                    <p style="margin: 0; color: red;"><strong>RECOMIENDO VER VIDEOS SOBRE LA TÉCNICA DE MOELLER...</strong></p><br>
+                    <p style="margin: 0; color: #f5b041;">La cual te ayudará a dominar el movimiento de muñeca (olas).</p>
+                </div>
+            </section>
+
+            <h2>Tipos de baquetas y su durabilidad, género etc</h2>
+            <table>
+                <tr>
+                    <th>Baquetas</th>
+                    <th>Baquetas 7A</th>
+                    <th>Baquetas 5A</th>
+                    <th>Baquetas 5B</th>
+                </tr>
+                <tr>
+                    <th>Durabilidad</th>
+                    <td>Se rompen muy facil</td>
+                    <td>Más resistentes</td>
+                    <td>Muy resistentes, pesadas</td>
+                </tr>
+                <tr>
+                    <th>Géneros</th>
+                    <td>Usados más en el jazz</td>
+                    <td>Versatil para muchos géneros</td>
+                    <td>Usadas en géneros más pesados, como el metal</td>
+                </tr>
+                <tr>
+                    <th>Dinámica</th>
+                    <td>Tiene muy buen control de dinámicas por su peso</td>
+                    <td>Sirven, pero requieren mayor control</td>
+                    <td>Ghost notes demasiado notorias por su peso</td>
+                </tr>
+            </table>
+
+            <nav>
+                <h2>Una vez estés al 100 con todo esto, te toca ir a ver ejercicios:</h2>
+                <a href="pagina2.html">Tutoriales de canciones, ejercicios y más →</a>
+                <hr>
+                <a href="index.html" class="btn-back">← Volver al Menú</a>
+            </nav>
+        </main>
     </div>
-</main>
 </body>
 </html>
