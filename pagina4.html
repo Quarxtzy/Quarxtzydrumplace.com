@@ -68,9 +68,11 @@
         }
 
         .sinesquinateacherAlexis {
-            resize: vertical;
-            max-width: 100%;
-            min-width: 80%;
+             resize: none;       
+    overflow-y: hidden;     
+    box-sizing: border-box;  
+    min-height: 100px;       
+}
         }
 
         .div-checkbox {
@@ -195,5 +197,13 @@
             </nav>
         </main>
     </div>
+       <script>
+        const textarea = document.getElementById('razones');
+
+        textarea.addEventListener('input', function() {
+            this.style.height = 'auto'; 
+            this.style.height = this.scrollHeight + 'px';
+        });
+    </script>
 </body>
 </html>
